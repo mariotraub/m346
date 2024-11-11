@@ -17,4 +17,4 @@ Beim starten der VM aber schon:
 ## Warum bekomme ich Fehlermeldungen
 Sonst würde die VM später auf Hardware zugreifen, die nicht existiert und wahrscheinlich abstürzen
 
-Meine Vermutung, dass es sich um einen Typ 2 handelt hat sich bestätigt
+Ich habe online nachgeschaut und meine Vermutung, dass es sich um einen Typ 2 handelt hat sich bestätigt: https://www.redhat.com/en/topics/virtualization/what-is-a-hypervisor?_x_tr_sl=en&_x_tr_tl=de&_x_tr_hl=de&_x_tr_pto=rq
