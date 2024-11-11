@@ -16,3 +16,5 @@ Beim starten der VM aber schon:
 
 ## Warum bekomme ich Fehlermeldungen
 Sonst würde die VM später auf Hardware zugreifen, die nicht existiert und wahrscheinlich abstürzen
+
+Meine Vermutung, dass es sich um einen Typ 2 handelt hat sich bestätigt
