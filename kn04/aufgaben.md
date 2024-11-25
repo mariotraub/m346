@@ -1,3 +1,5 @@
+![alt text](image-2.png)
+
 ## Zeigen Sie nun, dass Sie nur mit dem ersten privaten Key aus der Cloud-Init Datei einloggen können.
 1. Key:
 Zeigen Sie nun, dass Sie nur mit dem ersten privaten Key aus der Cloud-Init Datei einloggen können.
@@ -11,3 +13,6 @@ scp -i mario1.pem ubuntu@100.24.61.237:/var/log/cloud-init-output.log /mnt/c/Use
 ```
 
 [cloud-init-output.log](./cloud-init-output.log)
+
+## Aufgabe D
+[Aufgabe D](./d/aufgaben.md)
