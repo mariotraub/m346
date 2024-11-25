@@ -1,0 +1,179 @@
+Cloud-init v. 24.3.1-0ubuntu0~24.04.1 running 'init-local' at Mon, 18 Nov 2024 10:38:32 +0000. Up 8.79 seconds.
+Cloud-init v. 24.3.1-0ubuntu0~24.04.1 running 'init' at Mon, 18 Nov 2024 10:38:36 +0000. Up 12.47 seconds.
+ci-info: +++++++++++++++++++++++++++++++++++++++Net device info+++++++++++++++++++++++++++++++++++++++
+ci-info: +--------+------+------------------------------+---------------+--------+-------------------+
+ci-info: | Device |  Up  |           Address            |      Mask     | Scope  |     Hw-Address    |
+ci-info: +--------+------+------------------------------+---------------+--------+-------------------+
+ci-info: |  enX0  | True |        172.31.87.155         | 255.255.240.0 | global | 12:13:7e:a9:1b:9f |
+ci-info: |  enX0  | True | fe80::1013:7eff:fea9:1b9f/64 |       .       |  link  | 12:13:7e:a9:1b:9f |
+ci-info: |   lo   | True |          127.0.0.1           |   255.0.0.0   |  host  |         .         |
+ci-info: |   lo   | True |           ::1/128            |       .       |  host  |         .         |
+ci-info: +--------+------+------------------------------+---------------+--------+-------------------+
+ci-info: ++++++++++++++++++++++++++++++Route IPv4 info++++++++++++++++++++++++++++++
+ci-info: +-------+-------------+-------------+-----------------+-----------+-------+
+ci-info: | Route | Destination |   Gateway   |     Genmask     | Interface | Flags |
+ci-info: +-------+-------------+-------------+-----------------+-----------+-------+
+ci-info: |   0   |   0.0.0.0   | 172.31.80.1 |     0.0.0.0     |    enX0   |   UG  |
+ci-info: |   1   |  172.31.0.2 | 172.31.80.1 | 255.255.255.255 |    enX0   |  UGH  |
+ci-info: |   2   | 172.31.80.0 |   0.0.0.0   |  255.255.240.0  |    enX0   |   U   |
+ci-info: |   3   | 172.31.80.1 |   0.0.0.0   | 255.255.255.255 |    enX0   |   UH  |
+ci-info: +-------+-------------+-------------+-----------------+-----------+-------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: |   0   |  fe80::/64  |    ::   |    enX0   |   U   |
+ci-info: |   2   |    local    |    ::   |    enX0   |   U   |
+ci-info: |   3   |  multicast  |    ::   |    enX0   |   U   |
+ci-info: +-------+-------------+---------+-----------+-------+
+2024-11-18 10:38:36,516 - schema.py[WARNING]: cloud-config failed schema validation! You may run 'sudo cloud-init schema --system' to check the details.
+Generating public/private rsa key pair.
+Your identification has been saved in /etc/ssh/ssh_host_rsa_key
+Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub
+The key fingerprint is:
+SHA256:M9YeMspVbT5YzPH20/zJa3pdkYmDEaOuQPN1AMEp7GE root@ip-172-31-87-155
+The key's randomart image is:
++---[RSA 3072]----+
+|    . .o+. oo    |
+|     E o  o=.o   |
+|    ooo  o..O + o|
+|    ..o oo.* + *.|
+|     . .S.+ o ..=|
+|     ..+.* . .. =|
+|      o.  .    o+|
+|               oo|
+|             .+. |
++----[SHA256]-----+
+Generating public/private ecdsa key pair.
+Your identification has been saved in /etc/ssh/ssh_host_ecdsa_key
+Your public key has been saved in /etc/ssh/ssh_host_ecdsa_key.pub
+The key fingerprint is:
+SHA256:8UL2w3WqDbZypO3g6Xv0l/P5n+S8dKEpcMShhjpI3W8 root@ip-172-31-87-155
+The key's randomart image is:
++---[ECDSA 256]---+
+|           .     |
+|    . . . o .    |
+|   . . o+o o. .  |
+|  . . .oo=.. o   |
+|   . o  SEO..  . |
+|      . .*+*  o .|
+|        +.=o.o +.|
+|       . *. o O +|
+|       .=o.  . OB|
++----[SHA256]-----+
+Generating public/private ed25519 key pair.
+Your identification has been saved in /etc/ssh/ssh_host_ed25519_key
+Your public key has been saved in /etc/ssh/ssh_host_ed25519_key.pub
+The key fingerprint is:
+SHA256:5fQ8qn0MnYbfe9leTgtWFBPqAPmhRihodPENIgpCiIY root@ip-172-31-87-155
+The key's randomart image is:
++--[ED25519 256]--+
+|B..o.+.....    +.|
+|E..oo.o.oo..  . o|
+|...   ....=... . |
+|         * +o .  |
+|        S .o+o . |
+|          o.+..  |
+|          .= +  =|
+|         o  = o+=|
+|        . ..  .=o|
++----[SHA256]-----+
+Cloud-init v. 24.3.1-0ubuntu0~24.04.1 running 'modules:config' at Mon, 18 Nov 2024 10:38:39 +0000. Up 15.52 seconds.
+Cloud-init v. 24.3.1-0ubuntu0~24.04.1 running 'modules:final' at Mon, 18 Nov 2024 10:38:43 +0000. Up 19.51 seconds.
+Hit:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:4 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:5 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 Packages [15.0 MB]
+Get:6 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [466 kB]
+Get:7 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/universe Translation-en [5982 kB]
+Get:8 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [98.1 kB]
+Get:9 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [7188 B]
+Get:10 http://security.ubuntu.com/ubuntu noble-security/main amd64 c-n-f Metadata [5892 B]
+Get:11 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [561 kB]
+Get:12 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 Components [3871 kB]
+Get:13 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [149 kB]
+Get:14 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [51.9 kB]
+Get:15 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/universe amd64 c-n-f Metadata [301 kB]
+Get:16 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [269 kB]
+Get:17 http://security.ubuntu.com/ubuntu noble-security/universe amd64 c-n-f Metadata [13.5 kB]
+Get:18 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [434 kB]
+Get:19 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse Translation-en [118 kB]
+Get:20 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse amd64 Components [35.0 kB]
+Get:21 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/multiverse amd64 c-n-f Metadata [8328 B]
+Get:22 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [639 kB]
+Get:23 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [153 kB]
+Get:24 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [120 kB]
+Get:25 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 c-n-f Metadata [10.4 kB]
+Get:26 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [718 kB]
+Get:27 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [213 kB]
+Get:28 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [309 kB]
+Get:29 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/universe amd64 c-n-f Metadata [19.9 kB]
+Get:30 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [434 kB]
+Get:31 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [83.4 kB]
+Get:32 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+Get:33 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 c-n-f Metadata [424 B]
+Get:34 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [15.0 kB]
+Get:35 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [3820 B]
+Get:36 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Get:37 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 c-n-f Metadata [552 B]
+Get:38 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [208 B]
+Get:39 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-backports/main amd64 c-n-f Metadata [112 B]
+Get:40 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [10.6 kB]
+Get:41 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe Translation-en [10.8 kB]
+Get:42 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [21.0 kB]
+Get:43 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-backports/universe amd64 c-n-f Metadata [1104 B]
+Get:44 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+Get:45 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 c-n-f Metadata [116 B]
+Get:46 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Get:47 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 c-n-f Metadata [116 B]
+Get:48 http://security.ubuntu.com/ubuntu noble-security/restricted Translation-en [83.4 kB]
+Get:49 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+Get:50 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 c-n-f Metadata [424 B]
+Get:51 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [12.2 kB]
+Get:52 http://security.ubuntu.com/ubuntu noble-security/multiverse Translation-en [2940 B]
+Get:53 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [212 B]
+Get:54 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 c-n-f Metadata [356 B]
+Fetched 30.7 MB in 7s (4478 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (8.5.0-2ubuntu10.4).
+curl set to manually installed.
+wget is already the newest version (1.21.4-1ubuntu4.1).
+wget set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 41 not upgraded.
+Cloud-init v. 24.3.1-0ubuntu0~24.04.1 finished at Mon, 18 Nov 2024 10:38:58 +0000. Datasource DataSourceEc2Local.  Up 34.32 seconds
+Cloud-init v. 24.3.1-0ubuntu0~24.04.1 running 'init-local' at Mon, 25 Nov 2024 07:14:01 +0000. Up 5.01 seconds.
+Cloud-init v. 24.3.1-0ubuntu0~24.04.1 running 'init' at Mon, 25 Nov 2024 07:14:05 +0000. Up 8.88 seconds.
+ci-info: +++++++++++++++++++++++++++++++++++++++Net device info+++++++++++++++++++++++++++++++++++++++
+ci-info: +--------+------+------------------------------+---------------+--------+-------------------+
+ci-info: | Device |  Up  |           Address            |      Mask     | Scope  |     Hw-Address    |
+ci-info: +--------+------+------------------------------+---------------+--------+-------------------+
+ci-info: |  enX0  | True |        172.31.87.155         | 255.255.240.0 | global | 12:13:7e:a9:1b:9f |
+ci-info: |  enX0  | True | fe80::1013:7eff:fea9:1b9f/64 |       .       |  link  | 12:13:7e:a9:1b:9f |
+ci-info: |   lo   | True |          127.0.0.1           |   255.0.0.0   |  host  |         .         |
+ci-info: |   lo   | True |           ::1/128            |       .       |  host  |         .         |
+ci-info: +--------+------+------------------------------+---------------+--------+-------------------+
+ci-info: ++++++++++++++++++++++++++++++Route IPv4 info++++++++++++++++++++++++++++++
+ci-info: +-------+-------------+-------------+-----------------+-----------+-------+
+ci-info: | Route | Destination |   Gateway   |     Genmask     | Interface | Flags |
+ci-info: +-------+-------------+-------------+-----------------+-----------+-------+
+ci-info: |   0   |   0.0.0.0   | 172.31.80.1 |     0.0.0.0     |    enX0   |   UG  |
+ci-info: |   1   |  172.31.0.2 | 172.31.80.1 | 255.255.255.255 |    enX0   |  UGH  |
+ci-info: |   2   | 172.31.80.0 |   0.0.0.0   |  255.255.240.0  |    enX0   |   U   |
+ci-info: |   3   | 172.31.80.1 |   0.0.0.0   | 255.255.255.255 |    enX0   |   UH  |
+ci-info: +-------+-------------+-------------+-----------------+-----------+-------+
+ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: | Route | Destination | Gateway | Interface | Flags |
+ci-info: +-------+-------------+---------+-----------+-------+
+ci-info: |   0   |  fe80::/64  |    ::   |    enX0   |   U   |
+ci-info: |   2   |    local    |    ::   |    enX0   |   U   |
+ci-info: |   3   |  multicast  |    ::   |    enX0   |   U   |
+ci-info: +-------+-------------+---------+-----------+-------+
+2024-11-25 07:14:05,930 - schema.py[WARNING]: cloud-config failed schema validation! You may run 'sudo cloud-init schema --system' to check the details.
+Cloud-init v. 24.3.1-0ubuntu0~24.04.1 running 'modules:config' at Mon, 25 Nov 2024 07:14:08 +0000. Up 11.39 seconds.
+Cloud-init v. 24.3.1-0ubuntu0~24.04.1 running 'modules:final' at Mon, 25 Nov 2024 07:14:09 +0000. Up 12.27 seconds.
+Cloud-init v. 24.3.1-0ubuntu0~24.04.1 finished at Mon, 25 Nov 2024 07:14:09 +0000. Datasource DataSourceEc2Local.  Up 12.35 seconds
