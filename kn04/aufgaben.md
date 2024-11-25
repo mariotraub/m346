@@ -6,4 +6,8 @@ Zeigen Sie nun, dass Sie nur mit dem ersten privaten Key aus der Cloud-Init Date
 ![alt text](image-1.png)
 
 ## Screenshot mit dem Auszug aus dem Cloud-Init-Log. Der Befehl den Sie aufgerufen haben und der obere Teil des Logs sollten sichtbar sein. Sie müssen nicht das gesamte Log abgeben.
+```bash
+scp -i mario1.pem ubuntu@100.24.61.237:/var/log/cloud-init-output.log /mnt/c/Users/mtraub/Desktop/Repositorys/m346/kn04
+```
+
 [cloud-init-output.log](./cloud-init-output.log)
