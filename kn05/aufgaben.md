@@ -35,12 +35,10 @@ Statische IPs ändern sich nie und bleiben immer gleich, anders als dynamische I
 
 ![info](../assets/info.png)
 
-![db](../assets/db.png)
+![alt text](image-6.png)
 
 # Screenshot der Liste der Instanzen, wenn beide Instanzen gestoppt sind. Die Werte der öffentlichen und private IPs und der Status (gestoppt) müssen sichtbar sein.
 
-DB: 
-![db](../assets/db.png)
 Web: 
 ![web](../assets/web.png)
 
@@ -50,4 +48,6 @@ web:
 
 db: 
 
-![sub db](../assets/sub-db.png)
+![alt text](image-7.png)
+
+
