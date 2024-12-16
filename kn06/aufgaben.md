@@ -11,7 +11,8 @@ Ein Vermittler zwischen dem Client und einem Server. Er schickt die Anfrage des 
 - Bei runcmd werden noch packages installiert.
 - 2 Programme auf der selben Maschiene
 - 2 Webserver
-
+- Credentials sind direkt im File
+- DB wird bei jedem Start einer Instanz gelöscht und neu gefüllt
 # B) Vertikale Skalierung
 ## Disk erweitern
 ### Vorher
@@ -37,3 +38,9 @@ Ja
 ## Geht dies im laufenden Betrieb?
 Nein, die Instanz muss gestoppt sein, um den Typ zu ändern
 # C) Horizontale Skalierung
+## Seiten
+![swagger](../assets/2024-12-16-09-43-48.png)
+![endpoint](../assets/2024-12-16-09-44-34.png)
+## DNS
+1. Besitzer der Domain sein
+2. Bei einem DNS provider tbz-m346.ch zu http://kn06-128113009.us-east-1.elb.amazonaws.com mappen
