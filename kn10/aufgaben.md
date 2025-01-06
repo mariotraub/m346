@@ -68,6 +68,9 @@ Ich würde Zoho CRM wählen weil es billiger ist.
     - evtl. Migrationstools
 - SAAS:
     - Personalkosten für Migration der Daten
+
+Die Preisunterschiede sind gerechtfertigt, da wir nicht überall die selbe Hardware haben.
+Heroku macht mehr für uns als zb. AWS.
 ## Aufwand für Ihre Firma. Welche Arbeit müssten Sie als Firma in die verschiedenen Migrationsvarianten investieren?
 - IAAS: 
     - Betriebsysteme müssen aufgesetzt werden.
