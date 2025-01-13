@@ -11,7 +11,9 @@ Man soll von aussen auf die App zugreifen können.
 Load balancer auswählen
 ![monitoring](../assets/2025-01-06-11-40-49.png)
 Alles auswählen
-
+![ruby](../assets/2025-01-13-11-49-14.png)
+Es funktioniert!
+![working](../assets/2025-01-13-11-49-40.png)
 # C)
 Instanz:
 ![instance](../assets/2025-01-13-09-51-15.png)
