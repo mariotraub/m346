@@ -28,7 +28,7 @@ aws ec2 run-instances \
 ![telnet befehl](../assets/2025-01-20-09-13-29.png)
 
 ## KN05 CMD
-```
+```bash
 # Subnet
 aws ec2 create-subnet --vpc-id vpc-081ec835f3EXAMPLE --cidr-block 10.0.0.0/24 --tag-specifications ResourceType=subnet,Tags=[{Key=Name,Value=subnet-kn08}]
 
