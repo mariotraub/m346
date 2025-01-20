@@ -81,3 +81,24 @@ aws ec2 run-instances \
   --private-ip-address 10.0.1.20 \
   --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=Web-Server}]'
 ```
+### Ein paar Sätze zur Automatisierung. Was ist nun notwendig für die Automatisierung? Sie kennen die Befehle, können aber nicht einfach die Befehle in der Reihenfolge ausführen. Was ist notwendig? Wie gehen Sie vor?
+Man müsste sich einige Parameter speichern für die IDs die vergeben werden und
+diese dann in den weiteren Commands einfügen
+
+# B)
+[Terraform File](./main.tf)
+![telnet Verbindung](../assets/2025-01-20-10-17-29.png)
+
+## Terraform Befehle, die ich ausführen musste
+```bash
+terraform init
+
+# Optional: Zeigt, was gemacht werden wird
+terraform plan
+
+terraform apply
+```
+
+## Bei Aufgabe A haben Sie argumentiert was von Ihrer Seite her noch notwendig ist für die Automatisierung. Wieso ist das bei Terraform nicht notwendig?
+Die Parameter (vor allem IDs) werden von Terraform selbst gesetzt. Man kann die 
+verschiedenen Elemente einfach durch ihre Namen verknüpfen.
